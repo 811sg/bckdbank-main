@@ -15,4 +15,9 @@ public class GlobalExceptionHandler {
         return buildErrorResponse(HttpStatus.NOT_FOUND, ex.getMessage());
     }
 
+    private ResponseEntity<Map<String, Object>> buildErrorResponse(HttpStatus notFound, String message) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'buildErrorResponse'");
+    }
+
 }

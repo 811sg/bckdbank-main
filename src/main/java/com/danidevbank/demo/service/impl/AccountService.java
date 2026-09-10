@@ -2,7 +2,7 @@ package com.danidevbank.demo.service.impl;
 
 import java.util.List;
 
-import com.danidevbank.demo.dto.AccountResponse;
+import com.danidevbank.demo.dto.response.AccountResponse;
 
 public interface AccountService {
     List<AccountResponse> getUserAccounts(String email);
