@@ -1,7 +1,5 @@
 package com.danidevbank.demo.controller;
 
-import java.util.List;
-
 import org.apache.tomcat.util.net.openssl.ciphers.Authentication;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -31,6 +29,6 @@ public class AccountController {
     public ResponseEntity<AccountResponse> getAccountBynNmber(
         @PathVariable String accountNumber,
         Authentication authentication ){
-        return ResponseEntity.ok(accountService.getAccountByNumber(accountNumber, authentication.getName()));
+        return ResponseEntity.ok(accountService.getAccountByNumber(accountNumber, authentication.name()));
     }
 }
